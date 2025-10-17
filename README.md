@@ -66,6 +66,7 @@ Every night, my CPAP (continuous positive airway pressure) uploads data like `US
 
 ### Model Predictions
 - Loops through each of the **Prophet** models saved in my S3 bucket, and predicts the values for 7 days after the training data stops
+- Displayed tabularly and graphically
 
-https://github.com/user-attachments/assets/19ce58b4-451e-4449-9563-432fa5003bee
+https://github.com/user-attachments/assets/5ece1f5e-44cf-4d59-be75-7831ced4cc21
 
