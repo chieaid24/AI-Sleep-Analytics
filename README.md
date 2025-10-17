@@ -14,8 +14,8 @@
 <h2>✨ Overview</h2>
 
 Every night, my CPAP (continuous positive airway pressure) uploads data like `USAGE_HOURS`, `AHI`, and `LEAK`, as well as an overall `SLEEP_SCORE` for the night—a range from 0 to 100. 
-- So I made a [regression model](#🔍-regression-model) that will predict my `SLEEP_SCORE` for any given night
-- And a [forecasting model](#forecasting-model) that uses the historical data to predict what my sleep will be like in the future
+- So I made a [regression model](#-regression-model) that will predict my `SLEEP_SCORE` for any given night
+- And a [forecasting model](#-forecasting-model) that uses the historical data to predict what my sleep will be like in the future
 - Leveraged **SageMaker Studio Jupyter Notebooks** for implementation, **S3** for data and model storage, and **Glue** for generating metadata
 ## 📈 Regression Model
 ### Purpose
