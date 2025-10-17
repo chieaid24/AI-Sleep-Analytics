@@ -16,7 +16,7 @@
 Every night, my CPAP (continuous positive airway pressure) uploads data like `USAGE_HOURS`, `AHI`, and `LEAK`, as well as an overall `SLEEP_SCORE` for the night—a range from 0 to 100. 
 - So I made a [regression model](#🔍-regression-model) that will predict my `SLEEP_SCORE` for any given night
 - And a [forecasting model](#forecasting-model) that uses the historical data to predict what my sleep will be like in the future
-- Leveraged SageMaker Studio Jupyter Notebooks for implementation, S3 for data and model storage, and Glue for generating metadata
+- Leveraged **SageMaker Studio Jupyter Notebooks** for implementation, **S3** for data and model storage, and **Glue** for generating metadata
 ## 📈 Regression Model
 ### Purpose
 - Find the relationship between `SLEEP_SCORE` and the other metrics, by visualizing how each metric affects the overarching `SLEEP_SCORE`.
@@ -65,7 +65,7 @@ Every night, my CPAP (continuous positive airway pressure) uploads data like `US
 </p>
 
 ### Model Predictions
-- Loops through each of the Prophet models saved in my S3 bucket, and predicts the values for 7 days after the training data stops
+- Loops through each of the **Prophet** models saved in my S3 bucket, and predicts the values for 7 days after the training data stops
 
 https://github.com/user-attachments/assets/19ce58b4-451e-4449-9563-432fa5003bee
 
