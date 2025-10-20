@@ -1,6 +1,6 @@
 <h1 align="center"> 🌝 Sleep Regression & Forecasting with Machine Learning</h1>
 
-> As someone with [sleep apnea](https://www.nhlbi.nih.gov/health/sleep-apnea), I tracked and analyzed my CPAP data for 2 years, and here are my findings.
+> As someone with [sleep apnea](https://www.nhlbi.nih.gov/health/sleep-apnea), I tracked and analyzed my CPAP data for 2 years. Here's what I found!.
 
 ## 🧠 Skills Used
 
@@ -14,8 +14,8 @@
 <h2>✨ Overview</h2>
 
 Every night, my CPAP (continuous positive airway pressure) uploads data like `USAGE_HOURS`, `AHI`, and `LEAK`, as well as an overall `SLEEP_SCORE` for the night—a range from 0 to 100. 
-- So I made a [regression model](#-regression-model) that will predict my `SLEEP_SCORE` for any given night
-- And a [forecasting model](#-forecasting-model) that uses the historical data to predict what my sleep will be like in the future
+- So I made a [regression model](#-regression-model) that predicts my `SLEEP_SCORE` for any given night
+- And a [forecasting model](#-forecasting-model) that uses historical data to predict what my sleep will be like in the future
 - Leveraged **SageMaker Studio Jupyter Notebooks** for implementation, **S3** for data and model storage, and **Glue** for generating metadata
 ## 📈 Regression Model
 ### Purpose
@@ -23,7 +23,7 @@ Every night, my CPAP (continuous positive airway pressure) uploads data like `US
 
 ### Model Comparison
 - Trained and compared several machine learning models, including **Linear Regression**, **Random Forest**, **XGBoost**, and a **Neural Network Regressor** on the same data.
-- Resulted in the **Scikit-Learn Random Forest** model performing the best.
+- **Scikit-Learn Random Forest** model performed the best.
 
 
 
@@ -54,7 +54,7 @@ Every night, my CPAP (continuous positive airway pressure) uploads data like `US
 ### Model Training
 - Used Meta's Prophet model to analyze each metric in the dataset, saving the last week for testing predictions
 - Achieved RMSE's of **0.83** `SLEEP_SCORE` points, **0.23** `AHI` events, **0.74** `MASK_SESSION` events, **0.52** `USAGE_HOURS` hours, and **1.9** `LEAK` L/h.
-- Analyzed weekly seasonality trends, like my sleep score consistently being worse on Friday (see below)
+- Analyzed weekly seasonality trends, for example my sleep score consistently being worse on Fridays (see below)
 <p align="center">
   <img width="90%" alt="image" src="https://github.com/user-attachments/assets/235e1987-7d2e-41cb-b42c-d0fb861c12da" />
 </p>
